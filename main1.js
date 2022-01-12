@@ -76,6 +76,31 @@
     code.innerHTML = res;
     return res;
         
+   /* for(var j=0; j<direction.length; j++){
+        if(direction[j]==="top"){
+            if(this.box[r-1][i]===1){
+               this.box[r-1][i]=0;
+               break;
+            }
+        }
+        if(direction[j]==="right"){
+            if(this.box[r-1][i]===1){
+               this.box[r-1][i]=0;
+               break;
+    }
 }
-
-
+        if(direction[j]==="left"){
+        if(this.box[r-1][i]===1){
+        this.box[r-1][i]=0;
+              break;
+}
+}
+        if(direction[j]==="bottom"){
+        if(this.box[r-1][i]===1){
+        this.box[r-1][i]=0;
+        break;
+}
+}
+    }
+}*/
+ }
