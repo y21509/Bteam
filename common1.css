@@ -354,9 +354,41 @@ p{
 }
 h1{
   text-align: center;
-}
-#gamen{
-  text-align: center;
+  position: relative;
+  padding: 1em 0;
+  font-weight: normal;
 }
 
+h1::before,
+h1::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 6px;
+  box-sizing: border-box;
+}
+h1::before {
+  top: 0;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+h1::after {
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+#gamen{
+  position: absolute;
+  text-align: center;
+  margin: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: solid 3px #000000;
+  background-color: #fff;
+}
+body{
+  background-color: #D3DEF1;
+}
 
