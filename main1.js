@@ -73,32 +73,69 @@
     let code = document.getElementById("gamen");
     code.innerHTML = res;
     return res;
-        
-   /* for(var j=0; j<direction.length; j++){
-        if(direction[j]==="top"){
-            if(this.box[r-1][i]===1){
-               this.box[r-1][i]=0;
-               break;
+}
+
+function hanteiBun(){
+    var width= 55;
+    var height= 35;
+    var h;
+    var w;
+    var map[35][55] = {};
+
+
+    for(var i =0;i<height;i++){
+        for(var j = 0;j<width;j++){
+            if(map[i][j]==0){
+
+            }else{
+                
             }
         }
-        if(direction[j]==="right"){
-            if(this.box[r-1][i]===1){
-               this.box[r-1][i]=0;
-               break;
+    }
+
+   
+
+    //参照するマップと参照するマスのデータが必要
+    //下の文は「そのマスが壁だったらbreak、そうでなかったら指定された操作をする（参照する場所を上下左右に動かす）」ものです。
+    //読んだマスの値[0や1など]の判定式はまた別途必要なのでよろしくお願いします。
+    switch(length>h||width>w){
+        //上下左右の順番で書く
+        case 1 :            //上を入力した時
+            if(height==0){
+                break;
+            }else{
+                height=height-1;
+            }    
+        case 2 :            //下を入力した時
+            if(height==35){
+                break;
+            }else{
+                height=height+1;
+            }
+        case 3 :            //左を入力した時
+            if(width==0){
+                break;
+            }else{
+                width=width-1;
+            }            
+        case 4 :            //右を入力した時
+            if(width==55){
+                break;
+            }else{
+                width=width+1;
+            }        
     }
 }
-        if(direction[j]==="left"){
-        if(this.box[r-1][i]===1){
-        this.box[r-1][i]=0;
-              break;
-}
-}
-        if(direction[j]==="bottom"){
-        if(this.box[r-1][i]===1){
-        this.box[r-1][i]=0;
-        break;
-}
-}
-    }
-}*/
- }
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
