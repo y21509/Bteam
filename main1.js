@@ -76,11 +76,13 @@
 }
 
 // function hanteiBun(){
-//     var width= 55;
-//     var height= 35;
+
+//      配列にはmap[0][0]が含まれるので上のコードの生成する数からマイナス1する
+//     var width= 54;
+//     var height= 34;
 //     var h;
 //     var w;
-//     var map[35][55] = {};
+//     var map[34][54] = {};
 
 
 //     for(var i =0;i<height;i++){
