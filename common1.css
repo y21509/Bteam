@@ -380,6 +380,7 @@ h1::after {
 }
 
 #gamen{
+  position: absolute;
   text-align: center;
   margin: 10%;
   padding-left: 5%;
