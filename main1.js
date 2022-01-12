@@ -58,7 +58,6 @@
     
     // 出力結果生成
     for (var y = 0; y < h; y ++) {
-            res+="<p>";
         for (var x = 0; x < w; x ++) {
             if (maze[x + w * y] == 1) {
                 res += "■";
@@ -69,8 +68,7 @@
             }
             
         }
-        res+="</p>";
-        res += "<br />";
+        res += "<br>";
     }
     let code = document.getElementById("gamen");
     code.innerHTML = res;

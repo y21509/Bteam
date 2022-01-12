@@ -350,4 +350,13 @@ template {
 p{
   line-height: 0px;
   margin: 0;
+  color: blue;
 }
+h1{
+  text-align: center;
+}
+#gamen{
+  text-align: center;
+}
+
+
