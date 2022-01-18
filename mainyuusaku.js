@@ -79,7 +79,7 @@ var pattern =
 // 穴掘り法
 function dig(x, y) {
     // ランダムを使わずに生成
-    var type = (x + 3) * (y + 5) * 7 % pattern.length;
+    var type = (x + 3) * (y + 5) * 11% pattern.length;
     for (var i = 0; i < dir.length; i++) {
         var next = dir[pattern[type][i]];
         if (maze[(x + next[0] * 2) + w * (y + next[1] * 2)] == 1) {
