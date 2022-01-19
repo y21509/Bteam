@@ -20,7 +20,7 @@ mazewall.src = 'img/mazewall.png';
 var goal = new Object();
 goal.img = new Image();
 goal.img.src = 'img/goal.jpg';
-goal.x=50*16;
+goal.x=52*16;
 goal.y=32*16;
 
 //プレイヤーのオブジェクト作成
@@ -162,8 +162,8 @@ function main(){
         if(key.push === 'down')player.y += 4;
     }
     //ゴール処理
-    if(player.x===goal.x||player.y===goal.y){
-
+    if(player.x===goal.x&&player.y===goal.y){
+        alert("ゴール！！",window.location.reload());
     }
 
     requestAnimationFrame( main );
